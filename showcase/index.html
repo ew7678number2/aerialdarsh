@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Wong | DevOps & Enterprise Architect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">EW.<span>cloud</span></div>
+            <div class="nav-links">
+                <a href="#architecture">Architecture</a>
+                <a href="#cloud">Cloud</a>
+                <a href="#containers">Containers</a>
+                <a href="#academic">Academic</a>
+            </div>
+            <a href="mailto:eric@example.com" class="cta-btn">Get In Touch</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Enterprise Cloud Architect</span>
+            <h1>Engineering Scalable <span>Futures.</span></h1>
+            <p>DevOps specialist focused on AWS infrastructure, high-availability container orchestration, and clean enterprise software design.</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="val">AWS</span><span class="label">Certified</span></div>
+                <div class="stat"><span class="val">K8s</span><span class="label">Ready</span></div>
+                <div class="stat"><span class="val">100%</span><span class="label">Automated</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="assets/hero.png" alt="Cloud Architecture Visualization">
+            <div class="visual-glow"></div>
+        </div>
+    </header>
+
+    <section id="architecture" class="section">
+        <div class="section-header">
+            <i data-lucide="layers"></i>
+            <h2>Enterprise Architecture</h2>
+            <p>Maintainable, scalable, and resilient systems design.</p>
+        </div>
+        <div class="grid">
+            <div class="card glass">
+                <h3>Domain-Driven Design</h3>
+                <p>Expertise in modeling complex systems using DDD principles. Exemplified by the <strong>UNSW Exam Administration System</strong>, utilizing SOLID principles and clean inheritance hierarchies.</p>
+                <div class="tags">
+                    <span>Java</span>
+                    <span>OOP</span>
+                    <span>SOLID</span>
+                </div>
+            </div>
+            <div class="card glass">
+                <h3>Scalability & HA</h3>
+                <p>Designing multi-tier architectures with Nginx reverse proxies, load balancing, and auto-scaling groups to ensure 99.9% uptime.</p>
+                <div class="tags">
+                    <span>Load Balancing</span>
+                    <span>High Availability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cloud" class="section cloud-section">
+        <div class="section-header">
+            <i data-lucide="cloud"></i>
+            <h2>AWS Cloud Ecosystem</h2>
+            <p>Full-stack infrastructure management on Amazon Web Services.</p>
+        </div>
+        <div class="cloud-grid">
+            <div class="cloud-item">
+                <i data-lucide="server"></i>
+                <h4>Compute</h4>
+                <p>EC2, Lambda, EKS</p>
+            </div>
+            <div class="cloud-item">
+                <i data-lucide="database"></i>
+                <h4>Data</h4>
+                <p>RDS (PostgreSQL), S3, DynamoDB</p>
+            </div>
+            <div class="cloud-item">
+                <i data-lucide="shield-check"></i>
+                <h4>Security</h4>
+                <p>IAM, VPC, Security Groups</p>
+            </div>
+            <div class="cloud-item">
+                <i data-lucide="activity"></i>
+                <h4>Ops</h4>
+                <p>CloudWatch, CloudFormation</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="containers" class="section">
+        <div class="section-header">
+            <i data-lucide="container"></i>
+            <h2>Containerization & K8s</h2>
+            <p>Packaging and orchestrating modern applications.</p>
+        </div>
+        <div class="docker-showcase glass">
+            <div class="code-header">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <span>docker-compose.yml</span>
+            </div>
+            <pre><code>services:
+  flask-api:
+    build: .
+    environment:
+      - DB_HOST=postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:16-alpine
+    volumes:
+      - pgdata:/var/lib/postgresql/data</code></pre>
+            <div class="showcase-content">
+                <h3>Immutable Infrastructure</h3>
+                <p>Successfully containerized full-stack Python/Postgres applications, ensuring parity between dev and production environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="academic" class="section">
+        <div class="section-header">
+            <i data-lucide="graduation-cap"></i>
+            <h2>Academic Background</h2>
+            <p>UNSW Computer Science & Software Engineering.</p>
+        </div>
+        <div class="academic-card glass">
+            <div class="academic-info">
+                <h3>COMP2511: Object-Oriented Design</h3>
+                <p>Achieved high distinction in modeling complex enterprise scenarios, focusing on maintainability and extensibility through advanced design patterns.</p>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-secondary">View Domain Model</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Eric Wong. Powered by AWS S3 & EKS.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Mouse follow glow effect
+        const glow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.pageX + 'px';
+            glow.style.top = e.pageY + 'px';
+        });
+    </script>
+</body>
+</html>

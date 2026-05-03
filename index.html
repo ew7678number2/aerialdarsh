@@ -18,6 +18,7 @@
         <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="#personal-info">My Personal information</a></li>
+                <li><a href="/showcase/">DevOps Showcase</a></li>
                 <li><a href="#education">My Education Background</a></li>
                 <li><a href="#cs-study">My computer science study</a></li>
                 <li><a href="#experience">My Working Experience</a></li>
@@ -50,9 +51,9 @@
                 </p>
             </div>
             <div class="social-links fade-in">
-                <a href="mailto:ericwong06@icloud.com" class="btn">Email Me</a>
+                <a href="/showcase/" class="btn" style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); border: none;">View DevOps Showcase</a>
+                <a href="mailto:ericwong06@icloud.com" class="btn btn-outline">Email Me</a>
                 <a href="https://www.linkedin.com/in/eric-wong-22b636353/" class="btn btn-outline">LinkedIn</a>
-                <a href="https://github.com/eric-wong" class="btn btn-outline">GitHub</a>
             </div>
         </section>
 
@@ -162,13 +163,42 @@
 
         <!-- Computer Science Study -->
         <section id="cs-study">
-            <h2 class="section-title fade-in">My computer science study</h2>
+            <h2 class="section-title fade-in">My Computer Science Study</h2>
             <div class="grid">
                 <div class="glass-card fade-in">
-                    <h3 class="gradient-text">Academic Focus</h3>
-                    <p>Details about your CS coursework, algorithms, and technical deep dives...</p>
+                    <h3 class="gradient-text">Core Programming & Software</h3>
+                    <ul class="course-list">
+                        <li><strong>COMP1511</strong> Programming Fundamentals</li>
+                        <li><strong>COMP1521</strong> Computer Systems Fundamentals</li>
+                        <li><strong>COMP1531</strong> Software Engineering Fundamentals</li>
+                        <li><strong>COMP2521</strong> Data Structures and Algorithms</li>
+                        <li><strong>COMP2511</strong> Object-Oriented Programming (Software Construction)</li>
+                        <li><strong>COMP2041</strong> Software Tools</li>
+                    </ul>
+                </div>
+                <div class="glass-card fade-in">
+                    <h3 class="gradient-text">Mathematics & Logic</h3>
+                    <ul class="course-list">
+                        <li>Higher Mathematics 1A</li>
+                        <li>Higher Mathematics 1B</li>
+                        <li>Discrete Mathematics</li>
+                    </ul>
+                </div>
+                <div class="glass-card fade-in">
+                    <h3 class="gradient-text">Networking, Cyber & Professional</h3>
+                    <ul class="course-list">
+                        <li><strong>INFS1701</strong> Introduction to Networking and Cybersecurity</li>
+                        <li><strong>COMM1100</strong> Making Business Decisions</li>
+                        <li><strong>COMP1120</strong> Collaboration and Innovation</li>
+                        <li>Personal Finance</li>
+                    </ul>
                 </div>
             </div>
+            <style>
+                .course-list { list-style: none; padding: 0; margin-top: 1rem; }
+                .course-list li { margin-bottom: 0.8rem; font-size: 0.95rem; color: var(--text-color); border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.4rem; }
+                .course-list strong { color: var(--primary-color); font-family: 'JetBrains Mono', monospace; margin-right: 0.5rem; }
+            </style>
         </section>
 
         <!-- Professional Experience -->
